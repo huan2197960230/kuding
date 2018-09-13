@@ -27,7 +27,8 @@
                         {% for i in ret %}
                             <li style="list-style-type: none;">
                                 <div class="main">
-                                    <div class="time">{{ i.3 }}</div>
+                                    {% load str_time %}
+                                    <div class="time"> {{ i.3 | strf_time }}</div>
                                     <div class="ico">
                                         <i class="fa fa-lg fa-hand-o-right"
                                            style="color: #2aabd2"
@@ -36,7 +37,7 @@
                                     </div>
                                 </div>
                                 <div class="msg">
-                                    <div class="hidden">您的孩子{{ i.1 }}上了{{ i.2 }}这节课！</div>
+                                    <div class="hidden">您的孩子{{ i.1 }}上了 {{ i.2 }} 这节课！</div>
                                 </div>
                             </li>
                         {% endfor %}
@@ -60,7 +61,7 @@
 <script src="/static/js/kuding.js"></script>
 <script>
     $(".main").on('click', function () {
-        a_c($(this));
+        c_n($(this));
     })
 </script>
 </body>

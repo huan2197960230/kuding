@@ -8,11 +8,8 @@ import time
 
 def notice(request):
     # 后台读取当前登录用户的相关信息并返回给前台显示
-    ret = models.Grant.objects.filter(Q(g_sid__s_name="宋江") & Q(g_record=1)).values_list("g_record", "g_sid__s_name",
-                                                                                         "g_did__d_name", "g_time")
-    for i in ret:
-        print(type(i[3]))
-        # print(time.strftime("%Y-%m-%d %H:%M:%S", i[3]))
+    ret = models.WebGrant.objects.filter(Q(g_sid__s_name="宋江") & Q(g_record=1)).values_list("g_record", "g_sid__s_name",
+                                                                                            "g_did__d_name", "g_time")
     return render(request, "notice.html", {"ret": ret})
 
 
