@@ -1,3 +1,6 @@
+/*自定义css文件*/
+
+/*框体头部li标签样式*/
 .li_notice {
     width: 100%;
     height: 60px;
@@ -6,6 +9,7 @@
     color: #27b4f7;
 }
 
+/*框体头部a标签样式*/
 .clic {
     display: block;
     width: 100%;
@@ -34,6 +38,7 @@ a:hover {
     display: none;
 }
 
+/*通知时间样式*/
 .time {
     color: black;
     vertical-align: middle;
@@ -42,6 +47,7 @@ a:hover {
     margin: 14px 0;
 }
 
+/*通知样式*/
 .msg {
     height: 40px;
 }
@@ -51,11 +57,13 @@ a:hover {
     padding: 10px 0 10px 30px;
 }
 
+/*通知图标样式*/
 .ico {
     float: right;
     padding: 13px
 }
 
+/*帮助条目div样式*/
 li div.main {
     padding: 0 33px;
     cursor: pointer;
@@ -69,6 +77,7 @@ li div.main {
     border-radius: 8px;
 }
 
+/*滚动条相关*/
 ul.sc {
     height: 500px;
     overflow-x: hidden;
@@ -92,10 +101,12 @@ ul.sc::-webkit-scrollbar-track { /*滚动条里面轨道*/
     background: rgba(0, 0, 0, 0);
 }
 
+/*导航点击样式*/
 .active {
     background-color: #2aabd2;
 }
 
+/*帮助信息相关样式*/
 .li_c {
     padding: 15px;
     border: 1px cyan solid;
@@ -104,6 +115,7 @@ ul.sc::-webkit-scrollbar-track { /*滚动条里面轨道*/
     list-style: none
 }
 
+/*代码工具页相关*/
 .tool_div{
     position: absolute;
     top: 50%;
@@ -123,6 +135,8 @@ body{
     width: 100%;
     height: 100%;
 }
+
+/*考试页相关*/
 .test_div{
     background: transparent;
     display: inline-block;
