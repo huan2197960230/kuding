@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/static/css/kuding.css">
 </head>
 <body style="background-color: #eef3fa;">
-<div class="container-fluid" >
+<div class="container-fluid">
     <div class="row">
         {#        bootstrap导航条#}
         <div class="col-md-2" style="padding-left: 0;padding-right: 0;width:20%">
@@ -42,6 +42,7 @@
                         <div style=" height: 51px;color: #ffffff;font-size: 17px;border-radius: 5px;background: #27b4f7; text-align: center;width: 130px;padding: 15px 0;margin: 0 auto 20px 40px">
                             常 见 问 题
                         </div>
+                        {#                        显示常见问题（静态/动态？）#}
                         <ul class="sc">
                             <li style="list-style-type: none;margin-bottom:20px">
                                 <div class="main">
@@ -295,7 +296,6 @@
                                     <li>4.课程顾问会及时与您沟通并安排试听课程</li>
                                 </ul>
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -349,9 +349,9 @@
                     </li>
                 </ul>
             </div>
-{#            “联系我们”#}
+            {#            “联系我们”#}
             <div id="con" style="width: 200px;text-align: center;right: -200px;position: fixed;z-index: 9999;top: 30%;">
-                <span  style="position: absolute;left: -50px;height: 60px;width: 40px;top: 80px;background-color: cyan;color: #c12e2a;text-align: center;border-radius: 10px;line-height: 28px;font-size: 15px;padding: 5px">联系我们</span>
+                <span style="position: absolute;left: -50px;height: 60px;width: 40px;top: 80px;background-color: cyan;color: #c12e2a;text-align: center;border-radius: 10px;line-height: 28px;font-size: 15px;padding: 5px">联系我们</span>
                 <p>联系我们</p>
                 <div style="height: 200px;width: 200px;background-color: cyan">
 
@@ -375,14 +375,14 @@
         a_c($(this));
     });
     {#鼠标进入弹出“联系我们”#}
-    $("#con").mouseover(function  x() {
+    $("#con").mouseover(function x() {
         $(this).stop();
-        $(this).animate({right:"0px"},1000);
+        $(this).animate({right: "0px"}, 1000);
     });
-        {#鼠标离开 “联系我们”收起#}
+    {#鼠标离开 “联系我们”收起#}
     $("#con").mouseleave(function () {
         $(this).stop();
-        $(this).animate({right:"-200px"},1000);
+        $(this).animate({right: "-200px"}, 1000);
     })
 </script>
 </body>

@@ -23,25 +23,29 @@
                  style="background: #ffffff;box-shadow: 0 0 30px 8px rgba(222,239,252,.9);margin: 20px;padding-left: 0;padding-right: 0;height: 680px">
                 <div style="padding-right: 40px;padding-top: 40px">
                     <ul class="sc">
+                        {#                    从后台读取的数据填充到页面当中#}
                         {% for i in ret %}
-                        <li style="list-style-type: none;">
-                            <div class="main">
-                                <div class="time">{{ i.3 }}</div>
-                                <div class="ico"><i class="fa fa-lg fa-hand-o-right"
-                                                    style="color: #2aabd2"
-                                                    aria-hidden="true"></i></div>
-                            </div>
-                            <div class="msg">
-                                <div class="hidden">您的孩子{{ i.1 }}上了{{ i.2 }}这节课！</div>
-                            </div>
-                        </li>
+                            <li style="list-style-type: none;">
+                                <div class="main">
+                                    <div class="time">{{ i.3 }}</div>
+                                    <div class="ico">
+                                        <i class="fa fa-lg fa-hand-o-right"
+                                           style="color: #2aabd2"
+                                           aria-hidden="true">
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="msg">
+                                    <div class="hidden">您的孩子{{ i.1 }}上了{{ i.2 }}这节课！</div>
+                                </div>
+                            </li>
                         {% endfor %}
                     </ul>
                 </div>
             </div>
 
         </div>
-         <div class="col-md-2" style="padding-left: 0;padding-right: 0;width:20%">
+        <div class="col-md-2" style="padding-left: 0;padding-right: 0;width:20%">
             <div class="bord"
                  style="box-shadow: 0 0 30px 8px rgba(222,239,252,.9);margin: 15px;padding-left: 0;padding-right: 0;height: 680px;background-color: #ffffff">
                 <ul style="padding-left: 0">
@@ -53,18 +57,10 @@
 </div>
 <script src="/static/plug/Jquary-js/jquery-3.3.1.min.js"></script>
 <script src="/static/plug/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/kuding.js"></script>
 <script>
     $(".main").on('click', function () {
-        $(this).siblings('.msg').children().first().toggleClass("hidden");
-        {#$(this).children(".ico").children().("class","fa fa-lg fa-hand-o-down");#}
-        if ($(this).children(".ico").children().attr("class") === "fa fa-lg fa-hand-o-right") {
-            $(this).children(".ico").children().attr("class", "fa fa-lg fa-hand-o-down");
-        }
-        else {
-            $(this).children(".ico").children().attr("class", "fa fa-lg fa-hand-o-right");
-        }
-        $(this).parent().siblings().children('.msg').children().addClass("hidden");
-        $(this).parent().siblings().children('.main').children(".ico").children().attr("class", "fa fa-lg fa-hand-o-right");
+        a_c($(this));
     })
 </script>
 </body>
