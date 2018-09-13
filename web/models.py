@@ -97,4 +97,3 @@ class Grant(models.Model):
 
     class Meta:
         verbose_name_plural = '授课进度表'
-
