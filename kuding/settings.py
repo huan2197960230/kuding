@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'kuding.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "kuding",
+        'NAME': "ku",
         "HOST": "115.159.33.73",
-        "PORT": "3306",
+        "PORT": 3306,
         "USER": 'root',
         "PASSWORD": "123"
     }
