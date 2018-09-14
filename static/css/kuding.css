@@ -123,7 +123,6 @@ ul.sc::-webkit-scrollbar-track { /*滚动条里面轨道*/
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
 .tool_div div{
     background: transparent;
     height: 250px;
@@ -133,7 +132,6 @@ ul.sc::-webkit-scrollbar-track { /*滚动条里面轨道*/
     border: crimson 2px solid;
     border-radius: 10px;
 }
-
 body{
     width: 100%;
     height: 100%;
