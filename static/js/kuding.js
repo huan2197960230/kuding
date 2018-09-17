@@ -23,6 +23,6 @@ function c_n(t) {
     else {
         t.children(".ico").children().attr("class", "fa fa-lg fa-hand-o-right");
     }
-    t.parent().siblings().children('.li_c').addClass("hidden");
+    t.parent().siblings().children('.msg').children().addClass("hidden");
     t.parent().siblings().children('.main').children(".ico").children().attr("class", "fa fa-lg fa-hand-o-right");
 }
