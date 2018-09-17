@@ -105,8 +105,8 @@ ul.sc::-webkit-scrollbar-track { /*滚动条里面轨道*/
 
 /*导航点击样式*/
 .active {
-    background-color: #2aabd2;
-    border-radius: 15px;
+    background-color: #e3f4fb;
+    border-radius: 8px;
 }
 
 /*帮助信息相关样式*/
@@ -148,4 +148,19 @@ body{
     height: 250px;
     border: crimson 2px solid;
     border-radius: 10px;
+}
+
+.spn {
+    position: absolute;
+    left: -60px;
+    height: 60px;
+    width: 60px;
+    top: 100px;
+    background-color: cyan;
+    color: #c12e2a;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 20px;
+    font-size: 15px;
+    padding: 10px
 }
