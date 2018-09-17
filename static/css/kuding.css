@@ -106,6 +106,7 @@ ul.sc::-webkit-scrollbar-track { /*滚动条里面轨道*/
 /*导航点击样式*/
 .active {
     background-color: #2aabd2;
+    border-radius: 15px;
 }
 
 /*帮助信息相关样式*/
